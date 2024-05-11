@@ -9,7 +9,7 @@ metadata:
     traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: local.workshop.xprtz.net
+  - host: "localhost"
     http:
       paths:
       - pathType: Prefix
