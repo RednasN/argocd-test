@@ -7,12 +7,14 @@ metadata:
 spec:
   project: xprtz-argo-cd-project
   source:
+    # This is the repository ArgoCD will use to sync the application
     repoURL: https://github.com/RednasN/argocd-test.git
     targetRevision: main
     path: app
     directory:
       recurse: true
   destination:
+    # This is the cluster ArgoCD will deploy the application to
     server: https://kubernetes.default.svc
     namespace: dev
   syncPolicy:

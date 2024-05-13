@@ -5,7 +5,7 @@ metadata:
   labels:
     app: xprtz-argo-cd
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: xprtz-argo-cd
